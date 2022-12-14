@@ -14,9 +14,9 @@ class _AccountTransferState extends State<AccountTransfer> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: new Text("Account Transfer (0)", textAlign: TextAlign.center),
-        leading: new IconButton(
-          icon: new Icon(Icons.arrow_back_rounded),
+        title: const Text("Account Transfer (0)", textAlign: TextAlign.center),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_rounded),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -24,11 +24,12 @@ class _AccountTransferState extends State<AccountTransfer> {
         actions: <Widget>[
           //
           Padding(
-              padding: EdgeInsets.only(right: 20.0),
+              padding: const EdgeInsets.only(right: 20.0),
               child: InkWell(
-                onTap: (){
+                onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => AccountTransfer1()));                },
+                      builder: (context) => const AccountTransfer1()));
+                },
                 // onTap: () {
                 //   showDialog(
                 //     context: context,
@@ -54,37 +55,33 @@ class _AccountTransferState extends State<AccountTransfer> {
                 //     },
                 //   );
                 // },
-                child: Icon(
+                child: const Icon(
                   Icons.filter_1_outlined,
                 ),
               )),
           Padding(
-            padding: EdgeInsets.all(8),
+            padding: const EdgeInsets.all(8),
             child: PopupMenuButton<int>(
-    onSelected: (result) {
-      if (result == 1) {
-      Navigator.of(context).push(
-      MaterialPageRoute(builder: (context) => Search()));
-      }
-
-    },
-
-    itemBuilder: (context) => [
-                PopupMenuItem(
+              onSelected: (result) {
+                if (result == 1) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => const Search()));
+                }
+              },
+              itemBuilder: (context) => [
+                const PopupMenuItem(
                   value: 1,
                   child: Text("Search"),
                 ),
               ],
             ),
           ),
-
         ],
       ),
-
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children:[
+          children: const [
             Text("this is set AccountTransfer screen"),
           ],
         ),

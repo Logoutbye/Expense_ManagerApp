@@ -1,52 +1,50 @@
 import 'package:flutter/material.dart';
 
-Future<void> _showMyDialogue() async {
-  var context;
+Future<void> showMyDialogue(BuildContext context) async {
   return showDialog(
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text("Milleage Conversion"),
+          title: const Text("Mileage Conversion"),
           content: SingleChildScrollView(
               child: Column(
                 children: [
                   TextFormField(
-
-                    decoration: InputDecoration(hintText: "Milleage"),
+                    decoration: const InputDecoration(hintText: "Mileage"),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   TextFormField(
-                    decoration: InputDecoration(hintText: "Conversion Rate"),
+                    decoration: const InputDecoration(hintText: "Conversion Rate"),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   TextFormField(
-                    decoration: InputDecoration(hintText: "From"),
+                    decoration: const InputDecoration(hintText: "From"),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   TextFormField(
-                    decoration: InputDecoration(hintText: "To"),
+                    decoration: const InputDecoration(hintText: "To"),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text("Note:mileage number saves in Ref No. Field")
+                  const Text("Note:mileage number saves in Ref No. Field")
                 ],
               )),
           actions: [
             TextButton(
                 onPressed: () {},
-                child: Text("CANCEL")),
+                child: const Text("CANCEL")),
             TextButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: Text("OK"))
+                child: const Text("OK"))
           ],
         );
 

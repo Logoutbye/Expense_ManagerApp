@@ -11,9 +11,9 @@ class _CurrencyConverterState extends State<CurrencyConverter> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: new Text("Personal Expense", textAlign: TextAlign.center),
-        leading: new IconButton(
-          icon: new Icon(Icons.arrow_back),
+        title: const Text("Personal Expense", textAlign: TextAlign.center),
+        leading:  IconButton(
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -21,18 +21,18 @@ class _CurrencyConverterState extends State<CurrencyConverter> {
         actions: <Widget>[
           //
           Padding(
-              padding: EdgeInsets.only(right: 20.0),
+              padding: const EdgeInsets.only(right: 20.0),
               child: InkWell(
                 onTap: () {
                   showDialog(
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
-                        title: Text("Help"),
-                        content: Text(
+                        title: const Text("Help"),
+                        content: const Text(
                           "1. Bookmark curency pair as shortcut and click it to"
                               "select.\n\n 2. Long press the bookmarked currency "
-                              "pair to deelete it",
+                              "pair to delete it",
                           style: TextStyle(fontSize: 15),
                         ),
                         actions: [
@@ -40,7 +40,7 @@ class _CurrencyConverterState extends State<CurrencyConverter> {
                               onPressed: () {
                                 Navigator.pop(context);
                               },
-                              child: Text(
+                              child: const Text(
                                 "OK",
                                 style: TextStyle(
                                     color: Colors.teal, fontSize: 15),
@@ -50,7 +50,7 @@ class _CurrencyConverterState extends State<CurrencyConverter> {
                     },
                   );
                 },
-                child: Icon(
+                child: const Icon(
                   Icons.question_mark_rounded,
                 ),
               )),
@@ -59,8 +59,8 @@ class _CurrencyConverterState extends State<CurrencyConverter> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children:[
-            Text("this is set CurrencyConverter screen"),
+          children: const [
+            Text("This is set CurrencyConverter screen"),
           ],
         ),
       ),

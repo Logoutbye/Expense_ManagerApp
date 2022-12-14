@@ -14,55 +14,41 @@ class _AutoFillState extends State<AutoFill> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: new Text("Auto Fill", textAlign: TextAlign.center),
-        leading: new IconButton(
-          icon: new Icon(Icons.arrow_back_rounded),
+        title: const Text("Auto Fill", textAlign: TextAlign.center),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_rounded),
           onPressed: () {
             Navigator.pop(context);
           },
         ),
         actions: <Widget>[
-          // IconButton(onPressed:(){
-          //     i = !i;
-          //     print("sss$i");
-          //
-          //   },
-          //       icon:  i ? Icon(Icons.ac_unit,):Icon(Icons.done_rounded)),
 
-          // InkWell(
-          //   onTap: () {
-          //     i = !i;
-          //   },
-          //   child: i ? Icon(Icons.done_rounded,) : Icon(Icons.ac_unit)
-          // ),
           Padding(
-              padding: EdgeInsets.all(8),
+              padding: const EdgeInsets.all(8),
               child: InkWell(
-                  onTap: () {
-                    // i = !i;
-                  },
+                  onTap: () {},
                   child: i
-                      ? Icon(Icons.done_rounded)
-                      : Icon(Icons.filter_list_outlined))),
+                      ? const Icon(Icons.done_rounded)
+                      : const Icon(Icons.filter_list_outlined))),
           Padding(
-              padding: EdgeInsets.only(right: 20.0),
+              padding: const EdgeInsets.only(right: 20.0),
               child: InkWell(
                 onTap: () {
                   Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => AddAutoFill()));
+                      MaterialPageRoute(builder: (context) => const AddAutoFill()));
                 },
-                child: Icon(
+                child: const Icon(
                   Icons.add,
                 ),
               )),
           Padding(
-            padding: EdgeInsets.only(),
+            padding: const EdgeInsets.only(),
             child: PopupMenuButton(
               onSelected: (result) {
                 if (result == 1) {}
               },
               itemBuilder: (context) => [
-                PopupMenuItem(
+                const PopupMenuItem(
                   value: 1,
                   child: Text("Pre-Fill for Widget"),
                 ),
@@ -77,7 +63,7 @@ class _AutoFillState extends State<AutoFill> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          children: const [
             Text("this is set AutoFill screen"),
             SizedBox(height: 10,),
       ],

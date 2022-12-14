@@ -1,4 +1,4 @@
-import 'package:expense_manager/screens/first_screen.dart';
+import 'package:expense_manager/home_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -8,6 +8,9 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
+
+  //commet From Aamir
 
   // This widget is the root of your application.
   @override
@@ -19,20 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:  const FirstScreen(),
-      // initialRoute: '/',
-      // routes: {
-      //   '/': (context) => const FirstScreen(),
-      //   '/FirstScreen': (context) => const FirstScreen(),
-      //   '/MyHomePage': (context) => const MyHomePage(),
-      //   '/BarCode': (context) => const BarCode(),
-      //   '/MillegeConversion': (context) => const MillegeConversion(),
-      //   '/CurrencyConverter': (context) => const CurrencyConverter(),
-      //   '/AccountTransfer': (context) => const AccountTransfer(),
-      //   '/Recurring': (context) => const Recurring(),
-      //   '/AutoFill': (context) => const AutoFill(),
-      //   '/SetDefault': (context) => const SetDefault(),
-      // },
+      home:  const HomeScreen(),
     );
   }
 }

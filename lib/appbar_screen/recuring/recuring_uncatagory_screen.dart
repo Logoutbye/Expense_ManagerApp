@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class AddUncatagoryScreen extends StatefulWidget {
-  const AddUncatagoryScreen({Key? key}) : super(key: key);
+class UnCategoryScreen extends StatefulWidget {
+  const UnCategoryScreen({Key? key}) : super(key: key);
 
   @override
-  State<AddUncatagoryScreen> createState() => _AddUncatagoryScreenState();
+  State<UnCategoryScreen> createState() => _UnCategoryScreenState();
 }
 
-class _AddUncatagoryScreenState extends State<AddUncatagoryScreen> {
+class _UnCategoryScreenState extends State<UnCategoryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: new Text("Personal Expense", textAlign: TextAlign.center),
-        leading: new IconButton(
-          icon: new Icon(Icons.arrow_back_rounded),
+        title: const Text("Personal Expense", textAlign: TextAlign.center),
+        leading:  IconButton(
+          icon: const Icon(Icons.arrow_back_rounded),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -22,11 +22,10 @@ class _AddUncatagoryScreenState extends State<AddUncatagoryScreen> {
         actions: <Widget>[
           //
           Padding(
-            padding: EdgeInsets.only(right: 28),
+            padding: const EdgeInsets.only(right: 28),
             child: PopupMenuButton<int>(
-              child: Icon(Icons.arrow_drop_down),
               itemBuilder: (context) => [
-                PopupMenuItem(
+               const PopupMenuItem(
                   value: 1,
                   child: Text(
                     "Personal Expense",
@@ -35,18 +34,19 @@ class _AddUncatagoryScreenState extends State<AddUncatagoryScreen> {
                 ),
               ],
               color: Colors.black,
+              child: const Icon(Icons.arrow_drop_down),
             ),
           ),
           Padding(
-              padding: EdgeInsets.only(right: 20.0),
+              padding:  const EdgeInsets.only(right: 20.0),
               child: InkWell(
                 onTap: () {
                   showDialog(
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
-                        title: Text("Alert"),
-                        content: Text(
+                        title: const Text("Alert"),
+                        content: const Text(
                           "Please enter a valid number in Amount field!",
                           style: TextStyle(fontSize: 15),
                         ),
@@ -55,7 +55,7 @@ class _AddUncatagoryScreenState extends State<AddUncatagoryScreen> {
                               onPressed: () {
                                 Navigator.pop(context);
                               },
-                              child: Text(
+                              child: const Text(
                                 "OK",
                                 style: TextStyle(
                                     color: Colors.green, fontSize: 15),
@@ -65,17 +65,13 @@ class _AddUncatagoryScreenState extends State<AddUncatagoryScreen> {
                     },
                   );
                 },
-                child: Icon(
+                child: const Icon(
                   Icons.check_outlined,
                 ),
               )),
         ],
       ),
-      body: Container(
-        child: Text("this is for catagory add screen"),
-
-
-      ),
+      body: const Text("This is for category add screen"),
     );
   }
 }

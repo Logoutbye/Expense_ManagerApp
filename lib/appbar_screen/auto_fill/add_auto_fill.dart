@@ -12,24 +12,24 @@ class _AddAutoFillState extends State<AddAutoFill> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: new Text("Auto Fill", textAlign: TextAlign.center),
-        leading: new IconButton(
-          icon: new Icon(Icons.arrow_back_rounded),
+        title: const Text("Auto Fill", textAlign: TextAlign.center),
+        leading:  IconButton(
+          icon: const Icon(Icons.arrow_back_rounded),
           onPressed: () {
             Navigator.pop(context);
           },
         ),
         actions: <Widget>[
           Padding(
-              padding: EdgeInsets.only(right: 20.0),
+              padding: const EdgeInsets.only(right: 20.0),
               child: InkWell(
                 onTap: () {
                   showDialog(
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
-                        title: Text("Alert"),
-                        content: Text(
+                        title: const Text("Alert"),
+                        content: const Text(
                           "Expense Description is missing.",
                           style: TextStyle(fontSize: 15),
                         ),
@@ -38,7 +38,7 @@ class _AddAutoFillState extends State<AddAutoFill> {
                               onPressed: () {
                                 Navigator.pop(context);
                               },
-                              child: Text(
+                              child: const Text(
                                 "OK",
                                 style: TextStyle(
                                     color: Colors.green, fontSize: 15),
@@ -48,16 +48,13 @@ class _AddAutoFillState extends State<AddAutoFill> {
                     },
                   );
                 },
-                child: Icon(
+                child: const Icon(
                   Icons.check_outlined,
                 ),
               )),
 
         ],
-      ),      body: Container(
-        child: Text("this is for auto fill  add screen"),
-
-      ),
+      ),      body: const Text("This is for auto fill  add screen"),
     );
   }
 }

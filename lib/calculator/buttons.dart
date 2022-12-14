@@ -10,7 +10,11 @@ class MyButton extends StatelessWidget {
   final buttontapped;
 
 //Constructor
-  MyButton({this.color, this.textColor, required this.buttonText, this.buttontapped});
+  const MyButton({super.key,
+    this.color,
+    this.textColor,
+    required this.buttonText,
+    this.buttontapped});
 
   @override
   Widget build(BuildContext context) {

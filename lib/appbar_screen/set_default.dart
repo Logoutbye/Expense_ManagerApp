@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class SetDefault extends StatefulWidget {
   const SetDefault({Key? key}) : super(key: key);
 
@@ -22,7 +23,7 @@ class _SetDefaultState extends State<SetDefault> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Set Default"),
+        title: const Text("Set Default"),
       ),
       body: ListView(
         children: [
@@ -32,8 +33,8 @@ class _SetDefaultState extends State<SetDefault> {
               children: [
                 Row(
                   children: [
-                    Text("Keyboard auto pops up"),
-                    Spacer(),
+                    const Text("Keyboard auto pops up"),
+                    const Spacer(),
                     Switch(value: a,
                       onChanged: (value) {
                         setState(() {
@@ -41,16 +42,16 @@ class _SetDefaultState extends State<SetDefault> {
                           print(a);
                         });
                       },
-                      activeTrackColor: Color.fromRGBO(154, 211, 205, 100),
+                      activeTrackColor: const Color.fromRGBO(154, 211, 205, 100),
                       activeColor: Colors.teal,
                     ),
                   ],
                 ),
-                Divider(color: Colors.black45,),
+                const Divider(color: Colors.black45,),
                 Row(
                   children: [
-                    Text("Times"),
-                    Spacer(),
+                    const Text("Times"),
+                    const Spacer(),
                     Switch(value: b,
                       onChanged: (value) {
                         setState(() {
@@ -58,16 +59,16 @@ class _SetDefaultState extends State<SetDefault> {
                           print(b);
                         });
                       },
-                      activeTrackColor: Color.fromRGBO(154, 211, 205, 100),
+                      activeTrackColor: const Color.fromRGBO(154, 211, 205, 100),
                       activeColor: Colors.teal,
                     ),
                   ],
                 ),
-                Divider(color: Colors.black45,),
+                const Divider(color: Colors.black45,),
                 Row(
                   children: [
-                    Text("Split"),
-                    Spacer(),
+                    const Text("Split"),
+                    const Spacer(),
                     Switch(value: c,
                       onChanged: (value) {
                         setState(() {
@@ -75,16 +76,16 @@ class _SetDefaultState extends State<SetDefault> {
                           print(c);
                         });
                       },
-                      activeTrackColor: Color.fromRGBO(154, 211, 205, 100),
+                      activeTrackColor: const Color.fromRGBO(154, 211, 205, 100),
                       activeColor: Colors.teal,
                     ),
                   ],
                 ),
-                Divider(color: Colors.black45,),
+                const Divider(color: Colors.black45,),
                 Row(
                   children: [
-                    Text("Payment Method"),
-                    Spacer(),
+                    const Text("Payment Method"),
+                    const Spacer(),
                     Switch(value: d,
                       onChanged: (value) {
                         setState(() {
@@ -92,16 +93,16 @@ class _SetDefaultState extends State<SetDefault> {
                           print(d);
                         });
                       },
-                      activeTrackColor: Color.fromRGBO(154, 211, 205, 100),
+                      activeTrackColor: const Color.fromRGBO(154, 211, 205, 100),
                       activeColor: Colors.teal,
                     ),
                   ],
                 ),
-                Divider(color: Colors.black45,),
+                const Divider(color: Colors.black45,),
                 Row(
                   children: [
-                    Text("Status"),
-                    Spacer(),
+                    const Text("Status"),
+                    const Spacer(),
                     Switch(value: e,
                       onChanged: (value) {
                         setState(() {
@@ -109,16 +110,16 @@ class _SetDefaultState extends State<SetDefault> {
                           print(e);
                         });
                       },
-                      activeTrackColor: Color.fromRGBO(154, 211, 205, 100),
+                      activeTrackColor: const Color.fromRGBO(154, 211, 205, 100),
                       activeColor: Colors.teal,
                     ),
                   ],
                 ),
-                Divider(color: Colors.black45,),
+                const Divider(color: Colors.black45,),
                 Row(
                   children: [
-                    Text("Ref/Cheque No"),
-                    Spacer(),
+                    const Text("Ref/Cheque No"),
+                    const Spacer(),
                     Switch(value: f,
                       onChanged: (value) {
                         setState(() {
@@ -126,16 +127,16 @@ class _SetDefaultState extends State<SetDefault> {
                           print(f);
                         });
                       },
-                      activeTrackColor: Color.fromRGBO(154, 211, 205, 100),
+                      activeTrackColor: const Color.fromRGBO(154, 211, 205, 100),
                       activeColor: Colors.teal,
                     ),
                   ],
                 ),
-                Divider(color: Colors.black45,),
+                const Divider(color: Colors.black45,),
                 Row(
                   children: [
-                    Text("More"),
-                    Spacer(),
+                    const Text("More"),
+                    const Spacer(),
                     Switch(value: g,
                       onChanged: (value) {
                         setState(() {
@@ -143,16 +144,16 @@ class _SetDefaultState extends State<SetDefault> {
                           print(g);
                         });
                       },
-                      activeTrackColor: Color.fromRGBO(154, 211, 205, 100),
+                      activeTrackColor: const Color.fromRGBO(154, 211, 205, 100),
                       activeColor: Colors.teal,
                     ),
                   ],
                 ),
-                Divider(color: Colors.black45,),
+                const Divider(color: Colors.black45,),
                 Row(
                   children: [
-                    Text("Payee/Payer Auto Fill"),
-                    Spacer(),
+                    const Text("Payee/Payer Auto Fill"),
+                    const Spacer(),
                     Switch(value: h,
                       onChanged: (value) {
                         setState(() {
@@ -160,16 +161,16 @@ class _SetDefaultState extends State<SetDefault> {
                           print(h);
                         });
                       },
-                      activeTrackColor: Color.fromRGBO(154, 211, 205, 100),
+                      activeTrackColor: const Color.fromRGBO(154, 211, 205, 100),
                       activeColor: Colors.teal,
                     ),
                   ],
                 ),
-                Divider(color: Colors.black45,),
+                const Divider(color: Colors.black45,),
                 Row(
                   children: [
-                    Text("Ref/Cheque No Auto Fill"),
-                    Spacer(),
+                    const Text("Ref/Cheque No Auto Fill"),
+                    const Spacer(),
                     Switch(value:i ,
                       onChanged: (value) {
                         setState(() {
@@ -177,12 +178,12 @@ class _SetDefaultState extends State<SetDefault> {
                           print(i);
                         });
                       },
-                      activeTrackColor: Color.fromRGBO(154, 211, 205, 100),
+                      activeTrackColor: const Color.fromRGBO(154, 211, 205, 100),
                       activeColor: Colors.teal,
                     ),
                   ],
                 ),
-                Divider(color: Colors.black45,),
+                const Divider(color: Colors.black45,),
 
 
               ],

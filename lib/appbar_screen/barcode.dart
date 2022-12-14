@@ -13,8 +13,8 @@ class _BarCodeState extends State<BarCode> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children:[
-            Text("this is set BarCode screen"),
+          children: const [
+            Text("This is set BarCode screen"),
           ],
         ),
       ),

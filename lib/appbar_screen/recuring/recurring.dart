@@ -58,7 +58,7 @@ class _RecurringState extends State<Recurring> {
               child: InkWell(
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => AddUncatagoryScreen())
+                      builder: (context) => UnCategoryScreen())
                   );
                 },
                 child: Icon(
