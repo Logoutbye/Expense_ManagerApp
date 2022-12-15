@@ -39,6 +39,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   store_redirect: ^2.0.1
   math_expressions: ^2.3.1
+  shared_preferences: ^2.0.15
 
 dev_dependencies:
   flutter_test:

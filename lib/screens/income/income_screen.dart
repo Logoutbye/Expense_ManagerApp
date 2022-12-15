@@ -2,7 +2,7 @@ import 'package:expense_manager/appbar_screen/auto_fill/auto_fill.dart';
 import 'package:expense_manager/appbar_screen/recuring/recurring.dart';
 import 'package:expense_manager/appbar_screen/set_default.dart';
 import 'package:expense_manager/home_screen.dart';
-import 'package:expense_manager/screens/expense/payee_list.dart';
+import 'package:expense_manager/screens/expense/payee_list/payee_list.dart';
 import 'package:expense_manager/screens/expense/split_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:store_redirect/store_redirect.dart';
